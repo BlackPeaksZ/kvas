@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/catalog_style.css">
+    <script src="/main.js"></script>
+    <title>Каталог — Квас-Живас</title>
+</head>
+<body>
+<header class="header">
+    <div class="container header-inner">
+        <a href="index.html" class="logo">Квас-<span>Живас</span></a>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="catalog.html" class="active">Каталог</a>
+            <a href="about.html">О нас</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <div class="page-title">
+            <h1>Каталог</h1>
+            <p>Все наши сорта — живые, нефильтрованные, без концентратов</p>
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">Все</button>
+            <button class="filter-btn" data-filter="classic">Классика</button>
+            <button class="filter-btn" data-filter="season">Сезонные</button>
+            <button class="filter-btn" data-filter="tap">На розлив</button>
+        </div>
+
+        <div class="catalog-grid" id="catalogGrid">
+            <div class="product-card" data-category="classic">
+                <div class="product-img"><img src="/image/beer-img/bread.png" alt=""></div>
+                <span class="badge">Хит</span>
+                <h3>Традиционный</h3>
+                <div class="product-desc">Классический хлебный вкус, густая пена</div>
+                <div class="volume">0.5 л / стекло</div>
+                <div class="price">250 ₽</div>
+                <button class="btn-outline" data-name="Традиционный" data-desc="Классический хлебный квас с насыщенным вкусом и густой пеной. Варится по традиционному рецепту." data-price="250 ₽" data-img="/image/beer-img/bread.png">Подробнее</button>
+            </div>
+
+            <div class="product-card" data-category="season">
+                <div class="product-img"><img src="/image/beer-img/lemon.png" alt=""></div>
+                <span class="badge">Лето 2025</span>
+                <h3>Мята & Лимон</h3>
+                <div class="product-desc">Освежающий, цитрусовая нотка</div>
+                <div class="volume">0.5 л / стекло</div>
+                <div class="price">270 ₽</div>
+                <button class="btn-outline" data-name="Мята & Лимон" data-desc="Освежающий квас с мятой и лимоном. Идеален для жаркого дня." data-price="270 ₽" data-img="/image/beer-img/lemon.png">Подробнее</button>
+            </div>
+
+            <div class="product-card" data-category="classic">
+                <div class="product-img"><img src="/image/beer-img/honey.png" alt=""></div>
+                <span class="badge">Для гурманов</span>
+                <h3>Медовый с хреном</h3>
+                <div class="product-desc">Пряный, согревающий, пикантный</div>
+                <div class="volume">0.5 л / стекло</div>
+                <div class="price">290 ₽</div>
+                <button class="btn-outline" data-name="Медовый с хреном" data-desc="Пряный и пикантный вкус. Мёд и хрен для настоящих ценителей." data-price="290 ₽" data-img="/image/beer-img/honey.png">Подробнее</button>
+            </div>
+
+            <div class="product-card" data-category="season">
+                <div class="product-img"><img src="/image/beer-img/pear.png" alt=""></div>
+                <span class="badge">Фруктовая серия</span>
+                <h3>Грушевый</h3>
+                <div class="product-desc">Мягкий, сладковатый, летний</div>
+                <div class="volume">0.5 л / стекло</div>
+                <div class="price">270 ₽</div>
+                <button class="btn-outline" data-name="Грушевый" data-desc="Нежный грушевый вкус с лёгкой кислинкой. Очень мягкий и питкий." data-price="270 ₽" data-img="/image/beer-img/pear.png">Подробнее</button>
+            </div>
+
+            <div class="product-card" data-category="tap">
+                <div class="product-img"><img src="/image/beer-img/beer.png" alt=""></div>
+                <span class="badge">Самый свежий</span>
+                <h3>Разливной</h3>
+                <div class="product-desc">Из бочки, прямо в вашу тару</div>
+                <div class="volume">1 л / розлив</div>
+                <div class="price">180 ₽ / л</div>
+                <button class="btn-outline" data-name="Разливной" data-desc="Самый свежий квас из бочки. Живой, пузырчатый, настоящий." data-price="180 ₽/л" data-img="/image/beer-img/beer.png">Подробнее</button>
+            </div>
+
+            <div class="product-card" data-category="classic">
+                <div class="product-img"><img src="/image/beer-img/okroshka.png" alt=""></div>
+                <span class="badge">Для окрошки</span>
+                <h3>Семейный</h3>
+                <div class="product-desc">Насыщенный, в ПЭТ-бутылке</div>
+                <div class="volume">1.5 л / ПЭТ</div>
+                <div class="price">320 ₽</div>
+                <button class="btn-outline" data-name="Семейный" data-desc="Большая бутылка для всей семьи. Идеален для окрошки." data-price="320 ₽" data-img="/image/beer-img/okroshka.png">Подробнее</button>
+            </div>
+        </div>
+
+        <div class="inspire-banner">
+            <h3>🍻 Не знаете, что выбрать?</h3>
+            <p>Напишите нам в Telegram — подскажем вкус под окрошку, шашлык или просто настроение</p>
+            <a href="#" class="btn-primary">Написать в Telegram</a>
+        </div>
+    </div>
+</main>
+
+<div id="productModal" class="modal">
+    <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <div class="modal-product-img"><img src="" alt="" id="modalImg" style="width: 80px; height: 80px; object-fit: contain;"></div>
+        <h3 id="modalName">Традиционный</h3>
+        <div class="modal-desc" id="modalDesc">Описание товара</div>
+        <div class="modal-price" id="modalPrice">250 ₽</div>
+        <button class="btn-modal" id="modalOrderBtn">Хочу заказать</button>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container footer-inner">
+        <div class="footer-col">
+            <p><strong>Квас-Живас</strong></p>
+            <p>ул. Оборонная, 7</p>
+            <p>ежедневно 10:00–20:00</p>
+            <p>+7 (999) 123-45-67</p>
+        </div>
+        <div class="footer-col">
+            <p>Доставка по городу</p>
+            <p>Самовывоз из лавки</p>
+            <p>Розлив в вашу тару</p>
+        </div>
+        <div class="footer-col">
+            <p>Мы в соцсетях:</p>
+            <div class="socials">
+                <span>📱 Telegram</span>
+                <span>📸 Instagram</span>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
