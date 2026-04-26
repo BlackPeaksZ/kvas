@@ -364,6 +364,11 @@ nav a:hover, nav a.active {
         height: 220px;
     }
 
+    .hero-image img {
+        max-width: 80%;
+        max-height: 80%;
+    }
+
     .features {
         padding: 40px 0 24px;
     }
@@ -390,8 +395,17 @@ nav a:hover, nav a.active {
         font-size: 20px;
     }
 
+    .feature-card p {
+        font-size: 14px;
+    }
+
+    .catalog-preview {
+        padding: 32px 0;
+    }
+
     .catalog-preview h2 {
         font-size: 28px;
+        margin-bottom: 32px;
     }
 
     .product-grid {
@@ -401,10 +415,33 @@ nav a:hover, nav a.active {
     .product-card {
         width: 100%;
         max-width: 100%;
+        padding: 20px 16px;
+    }
+
+    .product-img {
+        height: 160px;
+    }
+
+    .product-img img {
+        max-width: 70%;
+        max-height: 70%;
+    }
+
+    .product-card h3 {
+        font-size: 20px;
+    }
+
+    .product-desc {
+        font-size: 13px;
     }
 
     .price {
         font-size: 22px;
+    }
+
+    .btn-outline {
+        padding: 8px 20px;
+        font-size: 14px;
     }
 
     .reviews {
@@ -427,9 +464,14 @@ nav a:hover, nav a.active {
         padding: 20px;
     }
 
+    .review-text {
+        font-size: 14px;
+    }
+
     .footer {
         padding: 32px 0 24px;
         margin-top: 24px;
+        border-radius: 24px 24px 0 0;
     }
 
     .footer-inner {
@@ -444,6 +486,18 @@ nav a:hover, nav a.active {
 }
 
 @media (max-width: 480px) {
+    .logo {
+        font-size: 18px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
     .hero-text h1 {
         font-size: 26px;
     }
@@ -472,7 +526,7 @@ nav a:hover, nav a.active {
     }
 
     .review-text {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .footer-col p {
